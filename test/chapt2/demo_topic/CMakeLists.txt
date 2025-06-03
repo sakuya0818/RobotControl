@@ -11,6 +11,12 @@ find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(turtlesim REQUIRED)
 
+add_executable(turtle_circle src/turtle_circle.cpp)
+ament_target_dependencies(turtle_circle
+  rclcpp
+  geometry_msgs
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -22,5 +28,9 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+install(TARGETS turtle_circle
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 ament_package()

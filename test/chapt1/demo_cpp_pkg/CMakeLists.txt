@@ -13,11 +13,6 @@ set (CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(ament_cmake REQUIRED)
 # Find the ROS 2 package
 find_package(rclcpp REQUIRED)
-# 如果需要使用其他 ROS 2 包，可以取消注释以下行
-# find_package(std_msgs REQUIRED)         # ROS 标准消息包，包含基本的消息类型定义
-# find_package(geometry_msgs REQUIRED)    # ROS 几何消息包，包含基本的几何消息类型定义
-# find_package(sensor_msgs REQUIRED)      # ROS 传感器消息包，包含传感器数据类型定义
-# find_package(nav_msgs REQUIRED)         # ROS 导航消息包，包含导航相关的消息类型定义
 
 set(PROJECT_SOURCES
     src/cpp_node.cpp
@@ -32,10 +27,6 @@ target_include_directories(${PROJECT_NAME}
 )
 target_link_libraries(${PROJECT_NAME}
     rclcpp::rclcpp
-    # std_msgs::std_msgs
-    # geometry_msgs::geometry_msgs
-    # sensor_msgs::sensor_msgs
-    # nav_msgs::nav_msgs
 )
 
 # 安装可执行文件
