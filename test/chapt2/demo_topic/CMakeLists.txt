@@ -17,6 +17,13 @@ ament_target_dependencies(turtle_circle
   geometry_msgs
 )
 
+add_executable(turtle_control src/turtle_control.cpp)
+ament_target_dependencies(turtle_control
+  rclcpp
+  geometry_msgs
+  turtlesim
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -29,7 +36,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(TARGETS turtle_circle
+install(TARGETS turtle_circle turtle_control
   DESTINATION lib/${PROJECT_NAME}
 )
 
