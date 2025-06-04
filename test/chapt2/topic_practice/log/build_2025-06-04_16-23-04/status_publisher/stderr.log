@@ -1,0 +1,5 @@
+  File "/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages/status_publisher/sys_status_pub.py", line 1
+    inport iclpy
+           ^^^^^
+SyntaxError: invalid syntax
+

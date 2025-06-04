@@ -1,0 +1,455 @@
+[0.000000] (-) TimerEvent: {}
+[0.000780] (status_interfaces) JobQueued: {'identifier': 'status_interfaces', 'dependencies': OrderedDict()}
+[0.001041] (status_publisher) JobQueued: {'identifier': 'status_publisher', 'dependencies': OrderedDict([('status_interfaces', '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces')])}
+[0.001277] (status_interfaces) JobStarted: {'identifier': 'status_interfaces'}
+[0.034381] (status_interfaces) JobProgress: {'identifier': 'status_interfaces', 'progress': 'cmake'}
+[0.056757] (status_interfaces) JobProgress: {'identifier': 'status_interfaces', 'progress': 'build'}
+[0.062923] (status_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_interfaces', '--', '-j16', '-l16'], 'cwd': '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sakuya'), ('GIT_ASKPASS', '/home/sakuya/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/extras/CUPTI/lib64'), ('HOME', '/home/sakuya'), ('OLDPWD', '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/src'), ('TERM_PROGRAM_VERSION', '1.100.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8df8a5ce-8711-4051-9b64-406a83d292c0.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/sakuya/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/sakuya/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/sakuya/.vscode-server/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sakuya'), ('NAME', 'LAPTOP-VMA11RM1'), ('WSL_INTEROP', '/run/WSL/492_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sakuya/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/libnvvp:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Common Files/Autodesk Shared/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/d/OpenCV/opencv/build/x64/vc16/bin:/mnt/d/Qt/5.15.2/msvc2019_64/bin:/mnt/c/Program Files/MySQL/MySQL Server 5.7/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/JXD/AppData/Local/Microsoft/WindowsApps:/mnt/c/texlive/2021/bin/win32:/mnt/d/Program Files/JetBrains Rider 2022.1.2/bin:/mnt/d/COLMAP:/mnt/d/FFmpeg/bin:/mnt/d/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5:/mnt/d/Qt/5.15.2/msvc2019/lib/cmake/Qt5:/mnt/d/vcpkg-2024.03.25:/mnt/c/Users/JXD/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/JXD/.dotnet/tools:/home/sakuya/.vscode-server/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/sakuya/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/usr/local/cuda-12.1/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/sakuya/.vscode-server/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-676a91cac0efadbe.txt'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e5fa65200.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_interfaces'), ('CUDA_HOME', '/usr/local/cuda-12.1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098230] (-) TimerEvent: {}
+[0.199008] (-) TimerEvent: {}
+[0.299670] (-) TimerEvent: {}
+[0.400283] (-) TimerEvent: {}
+[0.500910] (-) TimerEvent: {}
+[0.595524] (status_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.601012] (-) TimerEvent: {}
+[0.701670] (-) TimerEvent: {}
+[0.802255] (-) TimerEvent: {}
+[0.837295] (status_interfaces) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.902410] (-) TimerEvent: {}
+[1.003037] (-) TimerEvent: {}
+[1.103723] (-) TimerEvent: {}
+[1.112829] (status_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.117702] (status_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.128400] (status_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.149054] (status_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.172240] (status_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.193391] (status_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.203868] (-) TimerEvent: {}
+[1.304527] (-) TimerEvent: {}
+[1.405166] (-) TimerEvent: {}
+[1.505750] (-) TimerEvent: {}
+[1.606343] (-) TimerEvent: {}
+[1.706901] (-) TimerEvent: {}
+[1.807534] (-) TimerEvent: {}
+[1.828009] (status_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.907661] (-) TimerEvent: {}
+[2.008280] (-) TimerEvent: {}
+[2.108971] (-) TimerEvent: {}
+[2.209612] (-) TimerEvent: {}
+[2.310272] (-) TimerEvent: {}
+[2.410946] (-) TimerEvent: {}
+[2.511513] (-) TimerEvent: {}
+[2.612152] (-) TimerEvent: {}
+[2.712706] (-) TimerEvent: {}
+[2.794310] (status_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.812870] (-) TimerEvent: {}
+[2.913521] (-) TimerEvent: {}
+[3.014204] (-) TimerEvent: {}
+[3.114837] (-) TimerEvent: {}
+[3.127436] (status_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.157956] (status_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.188926] (status_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.190230] (status_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.191173] (status_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.214979] (-) TimerEvent: {}
+[3.315597] (-) TimerEvent: {}
+[3.413984] (status_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.415820] (-) TimerEvent: {}
+[3.516330] (-) TimerEvent: {}
+[3.616962] (-) TimerEvent: {}
+[3.717544] (-) TimerEvent: {}
+[3.818120] (-) TimerEvent: {}
+[3.918714] (-) TimerEvent: {}
+[3.986546] (status_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.018853] (-) TimerEvent: {}
+[4.119468] (-) TimerEvent: {}
+[4.220042] (-) TimerEvent: {}
+[4.237905] (status_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.320206] (-) TimerEvent: {}
+[4.420839] (-) TimerEvent: {}
+[4.478165] (status_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.520988] (-) TimerEvent: {}
+[4.621596] (-) TimerEvent: {}
+[4.722274] (-) TimerEvent: {}
+[4.822969] (-) TimerEvent: {}
+[4.923615] (-) TimerEvent: {}
+[5.024280] (-) TimerEvent: {}
+[5.124897] (-) TimerEvent: {}
+[5.225547] (-) TimerEvent: {}
+[5.326165] (-) TimerEvent: {}
+[5.426733] (-) TimerEvent: {}
+[5.527331] (-) TimerEvent: {}
+[5.627932] (-) TimerEvent: {}
+[5.728478] (-) TimerEvent: {}
+[5.829063] (-) TimerEvent: {}
+[5.929672] (-) TimerEvent: {}
+[6.030318] (-) TimerEvent: {}
+[6.130918] (-) TimerEvent: {}
+[6.231532] (-) TimerEvent: {}
+[6.332121] (-) TimerEvent: {}
+[6.391909] (status_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[6.432306] (-) TimerEvent: {}
+[6.532940] (-) TimerEvent: {}
+[6.633570] (-) TimerEvent: {}
+[6.734148] (-) TimerEvent: {}
+[6.834782] (-) TimerEvent: {}
+[6.935367] (-) TimerEvent: {}
+[7.036000] (-) TimerEvent: {}
+[7.078186] (status_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_interfaces\n'}
+[7.136281] (-) TimerEvent: {}
+[7.236948] (-) TimerEvent: {}
+[7.337559] (-) TimerEvent: {}
+[7.412073] (status_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target status_interfaces__rosidl_generator_c\x1b[0m\n'}
+[7.437688] (-) TimerEvent: {}
+[7.533683] (status_interfaces) StdoutLine: {'line': b'[  3%] Built target status_interfaces__cpp\n'}
+[7.537786] (-) TimerEvent: {}
+[7.638307] (-) TimerEvent: {}
+[7.676344] (status_interfaces) StdoutLine: {'line': b'[ 12%] Built target status_interfaces__rosidl_generator_c\n'}
+[7.691596] (status_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target status_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[7.715173] (status_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target status_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[7.719352] (status_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target status_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[7.738429] (-) TimerEvent: {}
+[7.839196] (-) TimerEvent: {}
+[7.886863] (status_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target status_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[7.895605] (status_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target status_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[7.897497] (status_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target status_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[7.939346] (-) TimerEvent: {}
+[8.040185] (-) TimerEvent: {}
+[8.138899] (status_interfaces) StdoutLine: {'line': b'[ 22%] Built target status_interfaces__rosidl_typesupport_cpp\n'}
+[8.140532] (-) TimerEvent: {}
+[8.160687] (status_interfaces) StdoutLine: {'line': b'[ 32%] Built target status_interfaces__rosidl_typesupport_c\n'}
+[8.179639] (status_interfaces) StdoutLine: {'line': b'[ 41%] Built target status_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[8.190577] (status_interfaces) StdoutLine: {'line': b'[ 51%] Built target status_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[8.203299] (status_interfaces) StdoutLine: {'line': b'[ 61%] Built target status_interfaces__rosidl_typesupport_introspection_c\n'}
+[8.232080] (status_interfaces) StdoutLine: {'line': b'[ 61%] Built target ament_cmake_python_copy_status_interfaces\n'}
+[8.240669] (-) TimerEvent: {}
+[8.341267] (-) TimerEvent: {}
+[8.347660] (status_interfaces) StdoutLine: {'line': b'[ 70%] Built target status_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[8.441405] (-) TimerEvent: {}
+[8.542039] (-) TimerEvent: {}
+[8.600613] (status_interfaces) StdoutLine: {'line': b'[ 70%] Built target status_interfaces\n'}
+[8.642178] (-) TimerEvent: {}
+[8.678682] (status_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[8.681893] (status_interfaces) StdoutLine: {'line': b'writing status_interfaces.egg-info/PKG-INFO\n'}
+[8.686702] (status_interfaces) StdoutLine: {'line': b'writing dependency_links to status_interfaces.egg-info/dependency_links.txt\n'}
+[8.694010] (status_interfaces) StdoutLine: {'line': b'writing top-level names to status_interfaces.egg-info/top_level.txt\n'}
+[8.727313] (status_interfaces) StdoutLine: {'line': b"reading manifest file 'status_interfaces.egg-info/SOURCES.txt'\n"}
+[8.742329] (-) TimerEvent: {}
+[8.763737] (status_interfaces) StdoutLine: {'line': b"writing manifest file 'status_interfaces.egg-info/SOURCES.txt'\n"}
+[8.842459] (-) TimerEvent: {}
+[8.893374] (status_interfaces) StdoutLine: {'line': b'[ 70%] Built target ament_cmake_python_build_status_interfaces_egg\n'}
+[8.899967] (status_interfaces) StdoutLine: {'line': b'[ 74%] Built target status_interfaces__py\n'}
+[8.942594] (-) TimerEvent: {}
+[9.042311] (status_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target status_interfaces__rosidl_generator_py\x1b[0m\n'}
+[9.043491] (-) TimerEvent: {}
+[9.144062] (-) TimerEvent: {}
+[9.244673] (-) TimerEvent: {}
+[9.345503] (-) TimerEvent: {}
+[9.379277] (status_interfaces) StdoutLine: {'line': b'[ 80%] Built target status_interfaces__rosidl_generator_py\n'}
+[9.445642] (-) TimerEvent: {}
+[9.521992] (status_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target status_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[9.523203] (status_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target status_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[9.524587] (status_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target status_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[9.545792] (-) TimerEvent: {}
+[9.646360] (-) TimerEvent: {}
+[9.746959] (-) TimerEvent: {}
+[9.847583] (-) TimerEvent: {}
+[9.907922] (status_interfaces) StdoutLine: {'line': b'[ 93%] Built target status_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[9.909246] (status_interfaces) StdoutLine: {'line': b'[ 93%] Built target status_interfaces__rosidl_typesupport_c__pyext\n'}
+[9.922868] (status_interfaces) StdoutLine: {'line': b'[100%] Built target status_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[9.947723] (-) TimerEvent: {}
+[10.048358] (-) TimerEvent: {}
+[10.148943] (-) TimerEvent: {}
+[10.151581] (status_interfaces) CommandEnded: {'returncode': 0}
+[10.172623] (status_interfaces) JobProgress: {'identifier': 'status_interfaces', 'progress': 'install'}
+[10.249130] (-) TimerEvent: {}
+[10.282743] (status_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_interfaces'], 'cwd': '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'sakuya'), ('GIT_ASKPASS', '/home/sakuya/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/extras/CUPTI/lib64'), ('HOME', '/home/sakuya'), ('OLDPWD', '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/src'), ('TERM_PROGRAM_VERSION', '1.100.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8df8a5ce-8711-4051-9b64-406a83d292c0.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/sakuya/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/sakuya/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/sakuya/.vscode-server/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sakuya'), ('NAME', 'LAPTOP-VMA11RM1'), ('WSL_INTEROP', '/run/WSL/492_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/sakuya/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/libnvvp:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Common Files/Autodesk Shared/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/d/OpenCV/opencv/build/x64/vc16/bin:/mnt/d/Qt/5.15.2/msvc2019_64/bin:/mnt/c/Program Files/MySQL/MySQL Server 5.7/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/JXD/AppData/Local/Microsoft/WindowsApps:/mnt/c/texlive/2021/bin/win32:/mnt/d/Program Files/JetBrains Rider 2022.1.2/bin:/mnt/d/COLMAP:/mnt/d/FFmpeg/bin:/mnt/d/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5:/mnt/d/Qt/5.15.2/msvc2019/lib/cmake/Qt5:/mnt/d/vcpkg-2024.03.25:/mnt/c/Users/JXD/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/JXD/.dotnet/tools:/home/sakuya/.vscode-server/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/sakuya/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/usr/local/cuda-12.1/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/sakuya/.vscode-server/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-676a91cac0efadbe.txt'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e5fa65200.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_interfaces'), ('CUDA_HOME', '/usr/local/cuda-12.1'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.349283] (-) TimerEvent: {}
+[10.381095] (status_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.410492] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/ament_index/resource_index/rosidl_interfaces/status_interfaces\n'}
+[10.427508] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces\n'}
+[10.449422] (-) TimerEvent: {}
+[10.452186] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg\n'}
+[10.484788] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail\n'}
+[10.526501] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__functions.c\n'}
+[10.549572] (-) TimerEvent: {}
+[10.559062] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__functions.h\n'}
+[10.590526] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__struct.h\n'}
+[10.620714] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__type_support.h\n'}
+[10.648224] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.649679] (-) TimerEvent: {}
+[10.675709] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/system_status.h\n'}
+[10.696668] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/environment/library_path.sh\n'}
+[10.720423] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/environment/library_path.dsv\n'}
+[10.749834] (-) TimerEvent: {}
+[10.832570] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/lib/libstatus_interfaces__rosidl_generator_c.so\n'}
+[10.849984] (-) TimerEvent: {}
+[10.886725] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces\n'}
+[10.912306] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg\n'}
+[10.942050] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail\n'}
+[10.950118] (-) TimerEvent: {}
+[10.982840] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__rosidl_typesupport_fastrtps_c.h\n'}
+[11.010627] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[11.050276] (-) TimerEvent: {}
+[11.068340] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/lib/libstatus_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[11.122958] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces\n'}
+[11.148146] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg\n'}
+[11.150371] (-) TimerEvent: {}
+[11.178291] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail\n'}
+[11.217297] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__builder.hpp\n'}
+[11.247661] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__struct.hpp\n'}
+[11.250489] (-) TimerEvent: {}
+[11.278506] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__traits.hpp\n'}
+[11.308632] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__type_support.hpp\n'}
+[11.335881] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[11.350644] (-) TimerEvent: {}
+[11.362016] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/system_status.hpp\n'}
+[11.378114] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces\n'}
+[11.403424] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg\n'}
+[11.432787] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail\n'}
+[11.450823] (-) TimerEvent: {}
+[11.466970] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/dds_fastrtps\n'}
+[11.510852] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[11.539414] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[11.550962] (-) TimerEvent: {}
+[11.591389] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/lib/libstatus_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[11.641226] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces\n'}
+[11.651094] (-) TimerEvent: {}
+[11.666116] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg\n'}
+[11.696373] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail\n'}
+[11.737354] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__rosidl_typesupport_introspection_c.h\n'}
+[11.751244] (-) TimerEvent: {}
+[11.770174] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__type_support.c\n'}
+[11.798052] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[11.851391] (-) TimerEvent: {}
+[11.854193] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/lib/libstatus_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[11.940938] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/lib/libstatus_interfaces__rosidl_typesupport_c.so\n'}
+[11.951536] (-) TimerEvent: {}
+[11.992574] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces\n'}
+[12.017965] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg\n'}
+[12.047375] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail\n'}
+[12.051646] (-) TimerEvent: {}
+[12.088369] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.121071] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/include/status_interfaces/status_interfaces/msg/detail/system_status__type_support.cpp\n'}
+[12.151797] (-) TimerEvent: {}
+[12.174642] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/lib/libstatus_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[12.251973] (-) TimerEvent: {}
+[12.259716] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/lib/libstatus_interfaces__rosidl_typesupport_cpp.so\n'}
+[12.322433] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/environment/pythonpath.sh\n'}
+[12.347164] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/environment/pythonpath.dsv\n'}
+[12.352087] (-) TimerEvent: {}
+[12.426375] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces-0.0.0-py3.10.egg-info\n'}
+[12.452241] (-) TimerEvent: {}
+[12.464969] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[12.552385] (-) TimerEvent: {}
+[12.568276] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[12.652530] (-) TimerEvent: {}
+[12.671766] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[12.752672] (-) TimerEvent: {}
+[12.775235] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[12.852825] (-) TimerEvent: {}
+[12.875610] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces\n'}
+[12.909484] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/libstatus_interfaces__rosidl_generator_py.so\n'}
+[12.931889] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/msg\n'}
+[12.952965] (-) TimerEvent: {}
+[12.972005] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/msg/_system_status.py\n'}
+[13.001645] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/msg/_system_status_s.c\n'}
+[13.031579] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/msg/__init__.py\n'}
+[13.053114] (-) TimerEvent: {}
+[13.060056] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/status_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.085967] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/status_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.112151] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/status_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.138305] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/_status_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[13.153239] (-) TimerEvent: {}
+[13.163445] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/_status_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[13.189527] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/_status_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[13.215695] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/__init__.py\n'}
+[13.253394] (-) TimerEvent: {}
+[13.353980] (-) TimerEvent: {}
+[13.454590] (-) TimerEvent: {}
+[13.552130] (status_interfaces) StdoutLine: {'line': b"Listing '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces'...\n"}
+[13.553164] (status_interfaces) StdoutLine: {'line': b"Compiling '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/__init__.py'...\n"}
+[13.554313] (status_interfaces) StdoutLine: {'line': b"Listing '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/msg'...\n"}
+[13.555261] (-) TimerEvent: {}
+[13.624952] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/status_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.655417] (-) TimerEvent: {}
+[13.756073] (-) TimerEvent: {}
+[13.759771] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/status_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.856220] (-) TimerEvent: {}
+[13.889643] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages/status_interfaces/status_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[13.956368] (-) TimerEvent: {}
+[14.000985] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/lib/libstatus_interfaces__rosidl_generator_py.so\n'}
+[14.056517] (-) TimerEvent: {}
+[14.069222] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/msg/SystemStatus.idl\n'}
+[14.099102] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/msg/SystemStatus.msg\n'}
+[14.136525] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/ament_index/resource_index/package_run_dependencies/status_interfaces\n'}
+[14.156652] (-) TimerEvent: {}
+[14.174944] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/ament_index/resource_index/parent_prefix_path/status_interfaces\n'}
+[14.256795] (-) TimerEvent: {}
+[14.269534] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/environment/ament_prefix_path.sh\n'}
+[14.293827] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/environment/ament_prefix_path.dsv\n'}
+[14.356939] (-) TimerEvent: {}
+[14.366677] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/environment/path.sh\n'}
+[14.390938] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/environment/path.dsv\n'}
+[14.457077] (-) TimerEvent: {}
+[14.465426] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/local_setup.bash\n'}
+[14.487750] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/local_setup.sh\n'}
+[14.508662] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/local_setup.zsh\n'}
+[14.529957] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/local_setup.dsv\n'}
+[14.557224] (-) TimerEvent: {}
+[14.602192] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/package.dsv\n'}
+[14.657368] (-) TimerEvent: {}
+[14.688746] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/ament_index/resource_index/packages/status_interfaces\n'}
+[14.744572] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/export_status_interfaces__rosidl_generator_cExport.cmake\n'}
+[14.757525] (-) TimerEvent: {}
+[14.782066] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/export_status_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[14.834157] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/export_status_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[14.857675] (-) TimerEvent: {}
+[14.870270] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/export_status_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[14.924959] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/export_status_interfaces__rosidl_generator_cppExport.cmake\n'}
+[14.957815] (-) TimerEvent: {}
+[14.977446] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/export_status_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[15.011505] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/export_status_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[15.057961] (-) TimerEvent: {}
+[15.064337] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/status_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[15.101933] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/status_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[15.155451] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/status_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[15.158056] (-) TimerEvent: {}
+[15.192748] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/status_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[15.246378] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/status_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[15.258198] (-) TimerEvent: {}
+[15.280284] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/status_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[15.331051] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/status_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[15.358353] (-) TimerEvent: {}
+[15.364645] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/status_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[15.415903] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/export_status_interfaces__rosidl_generator_pyExport.cmake\n'}
+[15.449932] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/export_status_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[15.458490] (-) TimerEvent: {}
+[15.474638] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[15.499294] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.522914] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.547289] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[15.558629] (-) TimerEvent: {}
+[15.572056] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[15.597099] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[15.621241] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[15.645152] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/status_interfacesConfig.cmake\n'}
+[15.658752] (-) TimerEvent: {}
+[15.663487] (status_interfaces) StdoutLine: {'line': b'-- Up-to-date: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/cmake/status_interfacesConfig-version.cmake\n'}
+[15.688528] (status_interfaces) StdoutLine: {'line': b'-- Installing: /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/share/status_interfaces/package.xml\n'}
+[15.758911] (-) TimerEvent: {}
+[15.760274] (status_interfaces) CommandEnded: {'returncode': 0}
+[15.859057] (-) TimerEvent: {}
+[15.959658] (-) TimerEvent: {}
+[16.060259] (-) TimerEvent: {}
+[16.160828] (-) TimerEvent: {}
+[16.261424] (-) TimerEvent: {}
+[16.362029] (-) TimerEvent: {}
+[16.462566] (-) TimerEvent: {}
+[16.563085] (-) TimerEvent: {}
+[16.663657] (-) TimerEvent: {}
+[16.764221] (-) TimerEvent: {}
+[16.864814] (-) TimerEvent: {}
+[16.965432] (-) TimerEvent: {}
+[17.065963] (-) TimerEvent: {}
+[17.082644] (status_interfaces) JobEnded: {'identifier': 'status_interfaces', 'rc': 0}
+[17.091912] (status_publisher) JobStarted: {'identifier': 'status_publisher'}
+[17.166109] (-) TimerEvent: {}
+[17.266723] (-) TimerEvent: {}
+[17.367425] (-) TimerEvent: {}
+[17.468088] (-) TimerEvent: {}
+[17.568664] (-) TimerEvent: {}
+[17.669237] (-) TimerEvent: {}
+[17.769813] (-) TimerEvent: {}
+[17.870431] (-) TimerEvent: {}
+[17.970998] (-) TimerEvent: {}
+[18.071607] (-) TimerEvent: {}
+[18.172181] (-) TimerEvent: {}
+[18.272843] (-) TimerEvent: {}
+[18.373481] (-) TimerEvent: {}
+[18.474003] (-) TimerEvent: {}
+[18.574600] (-) TimerEvent: {}
+[18.675213] (-) TimerEvent: {}
+[18.775814] (-) TimerEvent: {}
+[18.876359] (-) TimerEvent: {}
+[18.976952] (-) TimerEvent: {}
+[19.077590] (-) TimerEvent: {}
+[19.178172] (-) TimerEvent: {}
+[19.278740] (-) TimerEvent: {}
+[19.379361] (-) TimerEvent: {}
+[19.480024] (-) TimerEvent: {}
+[19.580644] (-) TimerEvent: {}
+[19.681219] (-) TimerEvent: {}
+[19.781807] (-) TimerEvent: {}
+[19.882400] (-) TimerEvent: {}
+[19.982923] (-) TimerEvent: {}
+[20.032774] (status_publisher) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/status_publisher', 'build', '--build-base', '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/build', 'install', '--record', '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/src/status_publisher', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sakuya', 'GIT_ASKPASS': '/home/sakuya/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/extras/CUPTI/lib64', 'HOME': '/home/sakuya', 'OLDPWD': '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/src', 'TERM_PROGRAM_VERSION': '1.100.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-8df8a5ce-8711-4051-9b64-406a83d292c0.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/sakuya/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/sakuya/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/sakuya/.vscode-server/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'sakuya', 'NAME': 'LAPTOP-VMA11RM1', 'WSL_INTEROP': '/run/WSL/492_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/sakuya/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.0/libnvvp:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Common Files/Autodesk Shared/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/d/OpenCV/opencv/build/x64/vc16/bin:/mnt/d/Qt/5.15.2/msvc2019_64/bin:/mnt/c/Program Files/MySQL/MySQL Server 5.7/bin:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/JXD/AppData/Local/Microsoft/WindowsApps:/mnt/c/texlive/2021/bin/win32:/mnt/d/Program Files/JetBrains Rider 2022.1.2/bin:/mnt/d/COLMAP:/mnt/d/FFmpeg/bin:/mnt/d/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5:/mnt/d/Qt/5.15.2/msvc2019/lib/cmake/Qt5:/mnt/d/vcpkg-2024.03.25:/mnt/c/Users/JXD/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/JXD/.dotnet/tools:/home/sakuya/.vscode-server/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/scripts/noConfigScripts:/home/sakuya/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/usr/local/cuda-12.1/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/sakuya/.vscode-server/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-676a91cac0efadbe.txt', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-0e5fa65200.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher', 'CUDA_HOME': '/usr/local/cuda-12.1', 'PYTHONPATH': '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages:/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up', 'CMAKE_PREFIX_PATH': '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces'}, 'shell': False}
+[20.083061] (-) TimerEvent: {}
+[20.183635] (-) TimerEvent: {}
+[20.284242] (-) TimerEvent: {}
+[20.385019] (-) TimerEvent: {}
+[20.485635] (-) TimerEvent: {}
+[20.586220] (-) TimerEvent: {}
+[20.686736] (-) TimerEvent: {}
+[20.787368] (-) TimerEvent: {}
+[20.888031] (-) TimerEvent: {}
+[20.988666] (-) TimerEvent: {}
+[21.089291] (-) TimerEvent: {}
+[21.189857] (-) TimerEvent: {}
+[21.288450] (status_publisher) StdoutLine: {'line': b'running egg_info\n'}
+[21.289948] (-) TimerEvent: {}
+[21.293933] (status_publisher) StdoutLine: {'line': b'creating ../../build/status_publisher/status_publisher.egg-info\n'}
+[21.298457] (status_publisher) StdoutLine: {'line': b'writing ../../build/status_publisher/status_publisher.egg-info/PKG-INFO\n'}
+[21.309770] (status_publisher) StdoutLine: {'line': b'writing dependency_links to ../../build/status_publisher/status_publisher.egg-info/dependency_links.txt\n'}
+[21.317041] (status_publisher) StdoutLine: {'line': b'writing entry points to ../../build/status_publisher/status_publisher.egg-info/entry_points.txt\n'}
+[21.322443] (status_publisher) StdoutLine: {'line': b'writing requirements to ../../build/status_publisher/status_publisher.egg-info/requires.txt\n'}
+[21.326038] (status_publisher) StdoutLine: {'line': b'writing top-level names to ../../build/status_publisher/status_publisher.egg-info/top_level.txt\n'}
+[21.335479] (status_publisher) StdoutLine: {'line': b"writing manifest file '../../build/status_publisher/status_publisher.egg-info/SOURCES.txt'\n"}
+[21.371249] (status_publisher) StdoutLine: {'line': b"reading manifest file '../../build/status_publisher/status_publisher.egg-info/SOURCES.txt'\n"}
+[21.390096] (-) TimerEvent: {}
+[21.411515] (status_publisher) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[21.438495] (status_publisher) StdoutLine: {'line': b"writing manifest file '../../build/status_publisher/status_publisher.egg-info/SOURCES.txt'\n"}
+[21.442503] (status_publisher) StdoutLine: {'line': b'running build\n'}
+[21.443467] (status_publisher) StdoutLine: {'line': b'running build_py\n'}
+[21.449216] (status_publisher) StdoutLine: {'line': b'creating /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/build\n'}
+[21.451455] (status_publisher) StdoutLine: {'line': b'creating /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/build/lib\n'}
+[21.454099] (status_publisher) StdoutLine: {'line': b'creating /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/build/lib/status_publisher\n'}
+[21.465098] (status_publisher) StdoutLine: {'line': b'copying status_publisher/sys_status_pub.py -> /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/build/lib/status_publisher\n'}
+[21.490230] (-) TimerEvent: {}
+[21.490731] (status_publisher) StdoutLine: {'line': b'copying status_publisher/__init__.py -> /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/build/lib/status_publisher\n'}
+[21.506415] (status_publisher) StdoutLine: {'line': b'running install\n'}
+[21.507497] (status_publisher) StdoutLine: {'line': b'running install_lib\n'}
+[21.532380] (status_publisher) StdoutLine: {'line': b'creating /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages/status_publisher\n'}
+[21.551262] (status_publisher) StdoutLine: {'line': b'copying /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/build/lib/status_publisher/sys_status_pub.py -> /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages/status_publisher\n'}
+[21.590356] (-) TimerEvent: {}
+[21.598159] (status_publisher) StdoutLine: {'line': b'copying /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/build/lib/status_publisher/__init__.py -> /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages/status_publisher\n'}
+[21.640500] (status_publisher) StdoutLine: {'line': b'byte-compiling /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages/status_publisher/sys_status_pub.py to sys_status_pub.cpython-310.pyc\n'}
+[21.657283] (status_publisher) StderrLine: {'line': b'  File "/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages/status_publisher/sys_status_pub.py", line 1\n'}
+[21.658538] (status_publisher) StderrLine: {'line': b'    inport iclpy\n'}
+[21.659516] (status_publisher) StderrLine: {'line': b'           ^^^^^\n'}
+[21.660692] (status_publisher) StderrLine: {'line': b'SyntaxError: invalid syntax\n'}
+[21.661649] (status_publisher) StderrLine: {'line': b'\n'}
+[21.665000] (status_publisher) StdoutLine: {'line': b'byte-compiling /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages/status_publisher/__init__.py to __init__.cpython-310.pyc\n'}
+[21.690499] (-) TimerEvent: {}
+[21.702540] (status_publisher) StdoutLine: {'line': b'running install_data\n'}
+[21.710725] (status_publisher) StdoutLine: {'line': b'creating /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/share/ament_index\n'}
+[21.713555] (status_publisher) StdoutLine: {'line': b'creating /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/share/ament_index/resource_index\n'}
+[21.717040] (status_publisher) StdoutLine: {'line': b'creating /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/share/ament_index/resource_index/packages\n'}
+[21.729073] (status_publisher) StdoutLine: {'line': b'copying resource/status_publisher -> /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/share/ament_index/resource_index/packages\n'}
+[21.757568] (status_publisher) StdoutLine: {'line': b'copying package.xml -> /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/share/status_publisher\n'}
+[21.773305] (status_publisher) StdoutLine: {'line': b'running install_egg_info\n'}
+[21.790633] (-) TimerEvent: {}
+[21.796999] (status_publisher) StdoutLine: {'line': b'Copying ../../build/status_publisher/status_publisher.egg-info to /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages/status_publisher-0.0.0-py3.10.egg-info\n'}
+[21.890787] (-) TimerEvent: {}
+[21.991374] (-) TimerEvent: {}
+[22.091924] (-) TimerEvent: {}
+[22.100051] (status_publisher) StdoutLine: {'line': b'running install_scripts\n'}
+[22.192061] (-) TimerEvent: {}
+[22.228539] (status_publisher) StdoutLine: {'line': b'Installing sys_status_pub script to /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/status_publisher\n'}
+[22.242274] (status_publisher) StdoutLine: {'line': b"writing list of installed files to '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/install.log'\n"}
+[22.272246] (status_publisher) CommandEnded: {'returncode': 0}
+[22.292200] (-) TimerEvent: {}
+[22.392805] (-) TimerEvent: {}
+[22.493395] (-) TimerEvent: {}
+[22.562285] (status_publisher) JobEnded: {'identifier': 'status_publisher', 'rc': 0}
+[22.570827] (-) EventReactorShutdown: {}
