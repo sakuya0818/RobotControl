@@ -1,5 +1,7 @@
 # For C++ language -------------------------------
 build/
+install/
+log/
 # Compiled Object files
 *.slo
 *.lo
