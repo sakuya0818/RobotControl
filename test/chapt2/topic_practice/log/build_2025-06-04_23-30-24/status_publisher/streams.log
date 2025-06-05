@@ -1,0 +1,22 @@
+[3.066s] Invoking command in '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/src/status_publisher': AMENT_PREFIX_PATH=/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces LD_LIBRARY_PATH=/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/extras/CUPTI/lib64 PYTHONPATH=/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages:/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/status_publisher build --build-base /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/build install --record /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/install.log --single-version-externally-managed install_data
+[4.366s] running egg_info
+[4.371s] writing ../../build/status_publisher/status_publisher.egg-info/PKG-INFO
+[4.379s] writing dependency_links to ../../build/status_publisher/status_publisher.egg-info/dependency_links.txt
+[4.386s] writing entry points to ../../build/status_publisher/status_publisher.egg-info/entry_points.txt
+[4.391s] writing requirements to ../../build/status_publisher/status_publisher.egg-info/requires.txt
+[4.395s] writing top-level names to ../../build/status_publisher/status_publisher.egg-info/top_level.txt
+[4.441s] reading manifest file '../../build/status_publisher/status_publisher.egg-info/SOURCES.txt'
+[4.494s] adding license file 'LICENSE'
+[4.521s] writing manifest file '../../build/status_publisher/status_publisher.egg-info/SOURCES.txt'
+[4.525s] running build
+[4.526s] running build_py
+[4.562s] running install
+[4.563s] running install_lib
+[4.684s] running install_data
+[4.718s] running install_egg_info
+[4.736s] removing '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages/status_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[4.808s] Copying ../../build/status_publisher/status_publisher.egg-info to /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages/status_publisher-0.0.0-py3.10.egg-info
+[5.102s] running install_scripts
+[5.217s] Installing sys_status_pub script to /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/status_publisher
+[5.234s] writing list of installed files to '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/install.log'
+[5.268s] Invoked command in '/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/src/status_publisher' returned '0': AMENT_PREFIX_PATH=/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces LD_LIBRARY_PATH=/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.1/lib64:/usr/local/cuda-12.1/extras/CUPTI/lib64 PYTHONPATH=/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_publisher/lib/python3.10/site-packages:/mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/install/status_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/status_publisher build --build-base /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/build install --record /mnt/e/MyWorkSpace/C++/Ros/test/chapt2/topic_practice/build/status_publisher/install.log --single-version-externally-managed install_data
