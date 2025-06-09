@@ -1,6 +1,8 @@
+# 客户端发送给服务端的数据
 float32 target_x
 float32 target_y
 ---
+# 服务端返回给客户端的数据
 int8 SUCCESS=1
 int8 FAILURE=0
 int8 result
