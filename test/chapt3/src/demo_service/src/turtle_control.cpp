@@ -10,6 +10,10 @@ public:
     explicit TurtleControlNode(const std::string& node_name)
     : Node(node_name)
     {
+        this->declare_parameter("k", 1.0);
+        this->declare_parameter("max_speed", 1.0);
+        this->get_parameter("k", k_);
+        this->get_parameter("max_speed", max_speed_);
         patrol_service_ = this->create_service<service_interfaces::srv::Patrol>(
             "patrol", [this](const std::shared_ptr<service_interfaces::srv::Patrol::Request> request,
                              std::shared_ptr<service_interfaces::srv::Patrol::Response> response) {
