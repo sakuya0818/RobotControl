@@ -2,6 +2,7 @@
 #include <geometry_msgs/msg/twist.hpp>
 #include <turtlesim/msg/pose.hpp>
 #include <service_interfaces/srv/patrol.hpp>
+#include <rcl_interfaces/msg/set_parameters_result.hpp>
 #include <chrono>
 
 class TurtleControlNode : public rclcpp::Node
@@ -14,6 +15,25 @@ public:
         this->declare_parameter("max_speed", 1.0);
         this->get_parameter("k", k_);
         this->get_parameter("max_speed", max_speed_);
+        parameter_callback_handle_ = this->add_on_set_parameters_callback(
+            [this](const std::vector<rclcpp::Parameter>& parameters)->rcl_interfaces::msg::SetParametersResult {
+                rcl_interfaces::msg::SetParametersResult result;
+                result.successful = true;
+                result.reason = "success";
+                for (const auto& parameter : parameters)
+                {
+                    RCLCPP_INFO(this->get_logger(), "设置参数 %s: %f", parameter.get_name().c_str(), parameter.as_double());
+                    if (parameter.get_name() == "k")
+                    {
+                        k_ = parameter.as_double();
+                    }
+                    if (parameter.get_name() == "max_speed")
+                    {
+                        max_speed_ = parameter.as_double();
+                    }
+                }
+                return result;
+            });
         patrol_service_ = this->create_service<service_interfaces::srv::Patrol>(
             "patrol", [this](const std::shared_ptr<service_interfaces::srv::Patrol::Request> request,
                              std::shared_ptr<service_interfaces::srv::Patrol::Response> response) {
@@ -60,9 +80,12 @@ public:
     }
 
 private:
+    // 服务回调函数
     rclcpp::Service<service_interfaces::srv::Patrol>::SharedPtr patrol_service_;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;
     rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr subscription_;
+    // 事件参数的回调函数
+    OnSetParametersCallbackHandle::SharedPtr parameter_callback_handle_;
     double target_x{1.0};
     double target_y{1.0};
     double k_{1.0};         // 比例系数
