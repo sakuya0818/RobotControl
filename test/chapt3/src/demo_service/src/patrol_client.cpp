@@ -2,6 +2,10 @@
 #include <service_interfaces/srv/patrol.hpp>
 #include <chrono>
 #include <ctime>
+#include <rcl_interfaces/msg/parameter.hpp>
+#include <rcl_interfaces/msg/parameter_value.hpp>
+#include <rcl_interfaces/msg/parameter_type.hpp>
+#include <rcl_interfaces/srv/set_parameters.hpp>
 
 class PatrolClient : public rclcpp::Node
 {
@@ -35,6 +39,26 @@ public:
         });
     }
 
+    // 创建客户端，发送请求
+    rcl_interfaces::srv::SetParameters::Response::SharedPtr call_set_parameters(
+        rcl_interfaces::msg::Parameter& param)
+    {
+        auto param_client_ = create_client<rcl_interfaces::srv::SetParameters>("/turtle_control_node/set_parameters");
+        // 检测服务端是否上线
+        while (!param_client_->wait_for_service(std::chrono::seconds(1))) {
+            if (!rclcpp::ok()) {
+                RCLCPP_ERROR(this->get_logger(), "Interrupted while waiting for the service. Exiting.");
+                return nullptr;
+            }
+            RCLCPP_INFO(this->get_logger(), "service not available, waiting again...");
+        }
+    }
+
+    // 更新参数K
+    void update_server_param_k(double k)
+    { 
+    }
+
 private:
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Client<service_interfaces::srv::Patrol>::SharedPtr patrol_client_;
@@ -44,6 +68,7 @@ int main(int argc, char* argv[] )
 {
     rclcpp::init(argc, argv);
     auto node = std::make_shared<PatrolClient>("patrol_client");
+    node->update_server_param_k(4.0);
     rclcpp::spin(node);
     rclcpp::shutdown();
     return 0;
