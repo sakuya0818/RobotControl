@@ -41,22 +41,50 @@ public:
 
     // 创建客户端，发送请求
     rcl_interfaces::srv::SetParameters::Response::SharedPtr call_set_parameters(
-        rcl_interfaces::msg::Parameter& param)
+        const rcl_interfaces::msg::Parameter& param)
     {
-        auto param_client_ = create_client<rcl_interfaces::srv::SetParameters>("/turtle_control_node/set_parameters");
+        auto param_client = create_client<rcl_interfaces::srv::SetParameters>("/turtle_control_node/set_parameters");
         // 检测服务端是否上线
-        while (!param_client_->wait_for_service(std::chrono::seconds(1))) {
+        while (!param_client->wait_for_service(std::chrono::seconds(1))) {
             if (!rclcpp::ok()) {
                 RCLCPP_ERROR(this->get_logger(), "Interrupted while waiting for the service. Exiting.");
                 return nullptr;
             }
             RCLCPP_INFO(this->get_logger(), "service not available, waiting again...");
         }
+        // 构造请求的对象
+        auto request = std::make_shared<rcl_interfaces::srv::SetParameters::Request>();
+        request->parameters.push_back(param);
+        RCLCPP_INFO(this->get_logger(), "SetParameters request name: %s", param.name.c_str());
+        auto future = param_client->async_send_request(request);
+        rclcpp::spin_until_future_complete(this->shared_from_this(), future);
+        auto response = future.get();
+
+        return response;
     }
 
     // 更新参数K
     void update_server_param_k(double k)
     { 
+        // 创建参数对象
+        auto param = rcl_interfaces::msg::Parameter();
+        param.name = "k";
+
+        // 创建参数值
+        auto param_value = rcl_interfaces::msg::ParameterValue();
+        param_value.type = rcl_interfaces::msg::ParameterType::PARAMETER_DOUBLE;
+        param_value.double_value = k;
+        param.value = param_value;
+
+        // 请求更新参数并处理
+        auto reponse = call_set_parameters(param);
+        if (reponse == nullptr) {
+            RCLCPP_ERROR(get_logger(), "Failed to update parameter k");
+        } else if (reponse->results.empty() || !reponse->results[0].successful) {
+            RCLCPP_ERROR(get_logger(), "Failed to update parameter k");
+        } else {
+            RCLCPP_INFO(get_logger(), "Parameter k updated successfully to %f", k);
+        }
     }
 
 private:
