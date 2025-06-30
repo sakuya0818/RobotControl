@@ -28,6 +28,7 @@ public:
     transform_stamped.transform.translation.y = 3.0;
     transform_stamped.transform.translation.z = 0.0;
 
+    // 欧拉角转四元数
     tf2::Quaternion q;
     q.setRPY(0.0, 0.0, 30 * M_PI / 180.0);
     transform_stamped.transform.rotation = tf2::toMsg(q);
