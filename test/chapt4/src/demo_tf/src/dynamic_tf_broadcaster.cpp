@@ -10,12 +10,12 @@ class TFBroadcaster : public rclcpp::Node
 public:
   TFBroadcaster() : Node("tf_broadcaster")
   {
-    // 创建静态变换广播器
+    // 创建动态变换广播器
     static_tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this);
-    timer_ = create_wall_timer(std::chrono::milliseconds(1000), std::bind(&TFBroadcaster::publish_static_tf, this));
+    timer_ = create_wall_timer(std::chrono::milliseconds(1000), std::bind(&TFBroadcaster::publish_tf, this));
   }
 
-  void publish_static_tf()
+  void publish_tf()
   {
     geometry_msgs::msg::TransformStamped transform_stamped;
     // 设置变换消息的属性

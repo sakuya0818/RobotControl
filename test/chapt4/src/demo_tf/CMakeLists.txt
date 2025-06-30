@@ -18,6 +18,9 @@ add_executable(static_tf_broadcaster
 add_executable(dynamic_tf_broadcaster
   src/dynamic_tf_broadcaster.cpp
 )
+add_executable(tf_listener
+  src/tf_listener.cpp
+)
 
 ament_target_dependencies(static_tf_broadcaster
   rclcpp
@@ -26,6 +29,12 @@ ament_target_dependencies(static_tf_broadcaster
   tf2_geometry_msgs
 )
 ament_target_dependencies(dynamic_tf_broadcaster
+  rclcpp
+  tf2_ros
+  geometry_msgs
+  tf2_geometry_msgs
+)
+ament_target_dependencies(tf_listener
   rclcpp
   tf2_ros
   geometry_msgs
@@ -44,7 +53,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install (TARGETS static_tf_broadcaster dynamic_tf_broadcaster
+install (TARGETS static_tf_broadcaster dynamic_tf_broadcaster tf_listener
   DESTINATION lib/${PROJECT_NAME}
 )
 
