@@ -60,7 +60,7 @@ public:
         rclcpp::spin_until_future_complete(this->shared_from_this(), future);
         auto response = future.get();
 
-        return response;
+        return response; 
     }
 
     // 更新参数K
