@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     <xacro:macro name="base_xacro" params="length radius">
+        <!-- 虚拟部件 -->
+        <link name="base_footprint"/>
+
         <!-- 机器人的身体部分 -->
         <link name="base_link">
             <!-- 部件的外观描述 -->
@@ -18,6 +21,12 @@
                 </material>
             </visual>
         </link>
+
+        <joint name="joint_name" type="fixed">
+            <origin xyz="0.0 0.0 ${length / 2.0 + 0.032 - 0.001}" rpy="0.0 0.0 0.0"/>
+            <parent link="base_footprint"/>
+            <child link="base_link"/>
+        </joint>
     </xacro:macro>
     
 </robot>
