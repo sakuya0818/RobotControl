@@ -12,6 +12,15 @@
                     <color rgba="0.0 0.0 0.0 0.5"/>
                 </material>
             </visual>
+            <collision>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <geometry>
+                    <box size="0.02 0.02 0.02"/>
+                </geometry>
+                <material name="black">
+                    <color rgba="0.0 0.0 0.0 0.5"/>
+                </material>
+            </collision>
         </link>
 
         <!-- 机器人的关节，用于组合机器人的部件 -->
